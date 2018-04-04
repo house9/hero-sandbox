@@ -1,3 +1,5 @@
+set -e # exit on error
+
 echo '============================='
 echo 'START: custom release steps'
 
@@ -6,10 +8,10 @@ echo 'START: custom release steps'
 # bundle exec rake assets_nodigest
 # echo '-----------------------------'
 
-echo '-----------------------------'
-echo 'RELEASE STEP: db:migrate'
-bundle exec rake db:migrate
-echo '-----------------------------'
+# echo '-----------------------------'
+# echo 'RELEASE STEP: db:migrate'
+# bundle exec rake db:migrate
+# echo '-----------------------------'
 
 echo 'END: custom release steps'
 echo '============================='
