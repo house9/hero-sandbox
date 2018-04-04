@@ -9,6 +9,9 @@
       "required": true,
       "value": "YES"
     },
+    "HEROKU_API_TOKEN": {
+      "required": true
+    },
     "HEROKU_APP_NAME": {
       "required": true
     },
