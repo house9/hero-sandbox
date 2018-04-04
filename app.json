@@ -9,6 +9,9 @@
       "required": true,
       "value": "YES"
     },
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
     "LANG": {
       "required": true
     },

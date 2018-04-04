@@ -3,6 +3,6 @@ namespace :heroku do
   task :review_app_postdeploy do
     heroku = PlatformAPI.connect_oauth(ENV['HEROKU_API_TOKEN'])
 
-    heroku.config_var.update('HEROKU_REVIEW_APP_INITIAL_DEPLOY', 'NO')
+    heroku.config_var.update(ENV['HEROKU_APP_NAME'], { 'HEROKU_REVIEW_APP_INITIAL_DEPLOY' => 'NO' })
   end
 end
