@@ -2,7 +2,7 @@
   "name": "hero-sandbox",
   "description": "Heroku Review App Example",
   "scripts": {
-    "postdeploy": "config/deploy/heroku_review_app.sh"
+    "postdeploy": "sh config/deploy/heroku_review_app.sh"
   },
   "env": {
     "LANG": {
