@@ -2,16 +2,9 @@
   "name": "hero-sandbox",
   "description": "Heroku Review App Example",
   "scripts": {
-    "postdeploy": "sh config/deploy/heroku_review_app.sh"
+    "postdeploy": "sh config/deploy/heroku_review_app_postdeploy.sh"
   },
   "env": {
-    "HEROKU_REVIEW_APP_INITIAL_DEPLOY": {
-      "required": true,
-      "value": "YES"
-    },
-    "HEROKU_API_TOKEN": {
-      "required": true
-    },
     "HEROKU_APP_NAME": {
       "required": true
     },
