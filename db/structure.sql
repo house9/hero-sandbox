@@ -51,7 +51,8 @@ CREATE TABLE widgets (
     id integer NOT NULL,
     name character varying,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    status character varying
 );
 
 
@@ -103,4 +104,6 @@ CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (v
 SET search_path TO "$user", public;
 
 INSERT INTO schema_migrations (version) VALUES ('20180404195951');
+
+INSERT INTO schema_migrations (version) VALUES ('20180404211824');
 
