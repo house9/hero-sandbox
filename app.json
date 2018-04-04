@@ -5,6 +5,10 @@
     "postdeploy": "sh config/deploy/heroku_review_app.sh"
   },
   "env": {
+    "HEROKU_REVIEW_APP_INITIAL_DEPLOY": {
+      "required": true,
+      "value": "YES"
+    },
     "LANG": {
       "required": true
     },

@@ -1,4 +1,4 @@
-set -e # exit on error
+# TODO: conditional: set -e # exit on error
 
 echo '============================='
 echo 'START: custom release steps'
@@ -10,6 +10,7 @@ echo 'START: custom release steps'
 
 echo '-----------------------------'
 echo 'RELEASE STEP: db:migrate'
+echo 'NOTE: this will fail 1st time on Preview Apps'
 bundle exec rake db:migrate
 echo '-----------------------------'
 
