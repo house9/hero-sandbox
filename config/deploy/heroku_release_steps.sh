@@ -1,3 +1,5 @@
+set -e # exit on error
+
 echo '============================='
 echo 'START: custom release steps'
 
