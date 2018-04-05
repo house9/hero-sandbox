@@ -1,6 +1,5 @@
 AllCops:
   Exclude:
-    - 'app/controllers/**'
     - 'bin/**/*'
     - 'db/**/*'
     - 'config/**/*'
@@ -8,4 +7,6 @@ AllCops:
     - 'test/test_helper.rb'
 
 Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
   Enabled: false
