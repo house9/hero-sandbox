@@ -4,7 +4,7 @@ echo '============================='
 echo 'START: review app postdeploy'
 
 # NOTE: this script runs 1 time when heroku creates review app, not every deploy
-# it runs after Profile#release step
+# it runs after Procfile#release step
 
 bundle exec rake db:structure:load
 bundle exec rake db:seed
