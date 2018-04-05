@@ -4,6 +4,18 @@
   "scripts": {
     "postdeploy": "bash config/deploy/heroku_review_app_postdeploy.sh"
   },
+  "environments": {
+    "test": {
+      "env": {
+        "HEROKU_APP_NAME": "test",
+        "LANG": "en_US.UTF-8",
+        "RACK_ENV": "test",
+        "RAILS_ENV": "test",
+        "RAILS_SERVE_STATIC_FILES": "true",
+        "SECRET_KEY_BASE": "test"
+      }
+    }
+  },
   "env": {
     "HEROKU_APP_NAME": {
       "required": true
@@ -22,16 +34,6 @@
     },
     "SECRET_KEY_BASE": {
       "required": true
-    },
-    "test": {
-      "env": {
-        "HEROKU_APP_NAME": "test",
-        "LANG": "en_US.UTF-8",
-        "RACK_ENV": "test",
-        "RAILS_ENV": "test",
-        "RAILS_SERVE_STATIC_FILES": "true",
-        "SECRET_KEY_BASE": "test"
-      }
     }
   },
   "formation": {
