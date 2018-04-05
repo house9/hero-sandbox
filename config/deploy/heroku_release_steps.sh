@@ -1,3 +1,14 @@
+# fail release on staging and production
+# workaround for review apps
+echo '------------------------------'
+echo $HEROKU_APP_NAME
+echo '------------------------------'
+
+if [ "$HEROKU_APP_NAME" == "hero-sandbox-staging" ] || [ "$HEROKU_APP_NAME" == "hero-sandbox-production" ]; then
+  echo 'exit on error.....';
+  set -e;
+fi
+
 echo '============================='
 echo 'START: custom release steps'
 
@@ -8,6 +19,7 @@ echo 'START: custom release steps'
 
 echo '-----------------------------'
 echo 'RELEASE STEP: db:migrate'
+echo 'NOTE: this will fail 1st time on Preview Apps'
 bundle exec rake db:migrate
 echo '-----------------------------'
 
