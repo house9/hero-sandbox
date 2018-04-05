@@ -4,7 +4,10 @@ echo '------------------------------'
 echo $HEROKU_APP_NAME
 echo '------------------------------'
 
-if [[ $HEROKU_APP_NAME =~ (staging|production)$ ]]; then echo 'exit on error.....'; set -e; fi
+if [ "$HEROKU_APP_NAME" == "hero-sandbox-staging" ] || [ "$HEROKU_APP_NAME" == "hero-sandbox-production" ]; then
+  echo 'exit on error.....';
+  set -e;
+fi
 
 echo '============================='
 echo 'START: custom release steps'
