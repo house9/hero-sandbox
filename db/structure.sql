@@ -52,7 +52,8 @@ CREATE TABLE widgets (
     name character varying,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    status character varying
+    status character varying,
+    category character varying
 );
 
 
@@ -106,4 +107,6 @@ SET search_path TO "$user", public;
 INSERT INTO schema_migrations (version) VALUES ('20180404195951');
 
 INSERT INTO schema_migrations (version) VALUES ('20180404211824');
+
+INSERT INTO schema_migrations (version) VALUES ('20180405003217');
 
