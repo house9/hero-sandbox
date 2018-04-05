@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - 'app/controllers/**'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'test/test_helper.rb'
+
+Style/Documentation:
+  Enabled: false
