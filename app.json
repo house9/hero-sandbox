@@ -2,7 +2,7 @@
   "name": "hero-sandbox",
   "description": "Heroku Review App Example",
   "scripts": {
-    "postdeploy": "sh config/deploy/heroku_review_app_postdeploy.sh"
+    "postdeploy": "bash config/deploy/heroku_review_app_postdeploy.sh"
   },
   "env": {
     "HEROKU_APP_NAME": {
